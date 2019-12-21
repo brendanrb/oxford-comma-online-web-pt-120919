@@ -1,8 +1,4 @@
 def oxford_comma(array)
-  big_array = array.join("  , ")
-  another_array = big_array.split
-  almost_done = another_array.insert(-2, " and ")
-  final_array = almost_done.join
   
   if array.size == 1
     return array.join
@@ -12,6 +8,8 @@ def oxford_comma(array)
 
 else 
   
+    array[-1].prepend "and "
+	array.join(", ")
   
 return final_array
 end
