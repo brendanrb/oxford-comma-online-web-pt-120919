@@ -10,8 +10,6 @@ else
   
     array[-1].prepend "and "
 	array.join(", ")
-  
-return final_array
 end
 
 end
